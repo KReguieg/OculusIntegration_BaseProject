@@ -5495,7 +5495,7 @@ MonoBehaviour:
   _renderScale: 1
   _dimensionsDriveMode: 0
   _resolution: {x: 128, y: 128}
-  _pixelsPerUnit: 100
+  _pixelsPerUnit: 500
   _renderingMode: 1
   _generateMipMaps: 0
   _useAlphaToMask: 1
@@ -5505,7 +5505,7 @@ MonoBehaviour:
   _emulateWhileInEditor: 1
   _renderingLayers:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 33
   _defaultUIMaterial: {fileID: 2100000, guid: bc9f80a2ae0e0a24d870176e48ab1b93, type: 2}
 --- !u!114 &987744067
 MonoBehaviour:
@@ -5964,7 +5964,7 @@ MonoBehaviour:
   _renderScale: 1
   _dimensionsDriveMode: 0
   _resolution: {x: 128, y: 128}
-  _pixelsPerUnit: 100
+  _pixelsPerUnit: 500
   _renderingMode: 1
   _generateMipMaps: 0
   _useAlphaToMask: 1
@@ -5974,7 +5974,7 @@ MonoBehaviour:
   _emulateWhileInEditor: 1
   _renderingLayers:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 33
   _defaultUIMaterial: {fileID: 2100000, guid: bc9f80a2ae0e0a24d870176e48ab1b93, type: 2}
 --- !u!114 &1024442123
 MonoBehaviour:
@@ -10021,7 +10021,6 @@ GameObject:
   - component: {fileID: 1735890739}
   - component: {fileID: 1735890738}
   - component: {fileID: 1735890737}
-  - component: {fileID: 1735890736}
   - component: {fileID: 1735890735}
   m_Layer: 0
   m_Name: RayInteractableCanvas (2)
@@ -10199,20 +10198,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1735890736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735890733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78f8e52fe10fd9499c5e5c8b3f953fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _canvasRenderTextureMesh: {fileID: 1735890738}
-  _pointable: {fileID: 1735890739}
 --- !u!114 &1735890737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10225,7 +10210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ffe41fe81087fa41a2062cc69b99615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointable: {fileID: 1735890736}
+  _pointable: {fileID: 1735890739}
   _canvas: {fileID: 987744069}
 --- !u!114 &1735890738
 MonoBehaviour:
@@ -11808,7 +11793,6 @@ GameObject:
   - component: {fileID: 2005644044}
   - component: {fileID: 2005644043}
   - component: {fileID: 2005644042}
-  - component: {fileID: 2005644045}
   - component: {fileID: 2005644041}
   m_Layer: 0
   m_Name: RayInteractableCanvas (1)
@@ -11998,7 +11982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ffe41fe81087fa41a2062cc69b99615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointable: {fileID: 2005644045}
+  _pointable: {fileID: 2005644044}
   _canvas: {fileID: 1024442125}
 --- !u!114 &2005644043
 MonoBehaviour:
@@ -12037,20 +12021,6 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _collider: {fileID: 207943150}
   _surface: {fileID: 1368133765}
---- !u!114 &2005644045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005644039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78f8e52fe10fd9499c5e5c8b3f953fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _canvasRenderTextureMesh: {fileID: 2005644043}
-  _pointable: {fileID: 2005644044}
 --- !u!1 &2036976607
 GameObject:
   m_ObjectHideFlags: 0
