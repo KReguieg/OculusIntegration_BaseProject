@@ -10,29 +10,21 @@ public class Line : MonoBehaviour
     [SerializeField] private LineRenderer lineRenderer;
 
     // store the points that make up the line i.e vector 3
-    List<Vector3> points;
+    private List<Vector3> points = new List<Vector3>();
 
     //write a method to create the points
     public void SetPoint(Vector3 newPosition)
     {
-        points.Add(newPosition);
+        this.points.Add(newPosition);
 
-        lineRenderer.positionCount = points.Count;
-        lineRenderer.SetPosition(points.Count -1, newPosition);
+        this.lineRenderer.positionCount = points.Count;
+        this.lineRenderer.SetPosition(points.Count -1, newPosition);
     }
 
     // write a method to update the points
     public void UpdateLine(Vector3 position)
     {
-        if(points == null)
-        {
-            points = new List<Vector3>();
-            SetPoint(position);
-        }
-
-        if(Vector3.Distance(points.Last(), position) > 0.001f)
-        {
-            SetPoint(position);
-        }
+        if (Vector3.Distance(this.points.Last(), position) > 0.001f)
+            this.SetPoint(position);
     }
 }
